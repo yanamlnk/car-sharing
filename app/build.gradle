@@ -1,0 +1,17 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.google.guava:guava:31.0.1-jre'
+    implementation group: 'com.h2database', name: 'h2', version: '1.4.200'
+}
+
+application {
+    mainClass = 'carsharing.App'
+}
